@@ -1,0 +1,433 @@
+/* #Global
+================================================== */
+body {
+  font-family: 'Rubik', sans-serif;
+  line-height: 1.3;
+  color: #333;
+}
+
+.text-line {
+  position: relative;
+  padding-bottom: 1.04vw;
+  margin-bottom: 1.04vw;
+  line-height: 1.1;
+}
+
+.text-line::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 3.2vw;
+  height: 3px;
+  background-color: #fccb06;
+}
+
+/* #Btn
+================================================== */
+/* Btn */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.35vw;
+  font-weight: 600;
+  border-radius: 500px;
+  height: 2.6vw;
+  padding: 0 2vw;
+  border: none;
+}
+
+/* Btn Primary */
+.btn-primary {
+  background-color: #fccb06;
+}
+
+/* Btn Secondary */
+.btn-secondary {
+  background-color: #333333;
+  color: white;
+}
+
+/* Btn Small */
+.btn-small {
+  font-size: 1.04vw;
+  font-weight: 400;
+  height: 2vw;
+  padding: 0 2vw;
+}
+
+/* #Input
+================================================== */
+/* Primary */
+.input-primary {
+  width: 100%;
+  background-color: white;
+  border: none;
+  color: #333;
+  height: 2.6vw;
+  padding: 0 .78vw;
+}
+
+.input-primary::placeholder {
+  color: #333;
+}
+
+/* #Checkox
+================================================== */
+.checkbox {
+  align-items: center;
+}
+
+.checkbox input {
+  width: .8vw;
+  height: .8vw;
+  border-radius: 0;
+  border-color: #333;
+  flex: 0 0 .8vw;
+}
+
+.checkbox input:checked {
+  border-color: #333;
+  background-color: #333;
+  background-size: .5vw auto;
+}
+
+.checkbox label {
+  padding-right: .5vw;
+}
+
+/* #Header
+================================================== */
+
+/* #Footer
+================================================== */
+.cohen-footer {
+  padding: 2.6vw 0;
+  background-image: url('../img/global/bg-footer.jpg');
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cohen-footer .container {
+  width: 62%;
+}
+
+/* Top */
+.cohen-footer-top ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cohen-footer-top ul li:not(:last-child) {
+  margin-left: 3.125vw;
+}
+
+/* Bottom */
+.cohen-footer-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.cohen-footer .social ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cohen-footer .social ul li:not(:last-child) {
+  margin-left: 1.5vw;
+}
+
+.cohen-footer .social img {
+  width: 2.1vw;
+  height: 2.1vw;
+  object-fit: contain;
+  object-position: center;
+}
+
+.cohen-footer .cert,
+.cohen-footer .logo {
+  flex: 0 0 30%;
+}
+
+.cohen-footer .cert img {
+  width: 4.8vw;
+}
+
+.cohen-footer .logo img {
+  width: 10.625vw;
+  margin-right: auto;
+}
+
+/* #Banner
+================================================== */
+.cohen-banner {
+  position: relative;
+}
+
+/* Img */
+.cohen-banner .img,
+.cohen-banner .img img {
+  width: 100%;
+  height: 43vw;
+  object-fit: cover;
+  object-position: top center;
+  position: relative;
+}
+
+.cohen-banner .img::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.781), transparent);
+  z-index: 1;
+}
+
+.cohen-banner .img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.151), transparent);
+  z-index: 1;
+}
+
+/* Text */
+.cohen-banner .text {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+
+.cohen-banner .text h1,
+.cohen-banner .text h2,
+.cohen-banner .text h3,
+.cohen-banner .text h4 {
+  line-height: 1;
+}
+
+.cohen-banner .text p {
+  margin-top: .5vw;
+}
+
+.cohen-banner .text-shape {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: #fccb06;
+  width: 20.5vw;
+  height: 20.5vw;
+  z-index: -1;
+  border-radius: 4.68vw;
+  opacity: .9;
+}
+
+/* #Icons
+================================================== */
+.cohen-icons .container {
+  width: 65%;
+}
+
+.cohen-icons-list {
+  display: flex;
+  text-align: center;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 4.16vw 0;
+}
+
+.cohen-icons-list .cohen-icons-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 .5vw;
+  line-height: 1.2;
+}
+
+.cohen-icons-list .cohen-icons-item .img {
+  width: 10.67vw;
+  height: 10.67vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 1.3vw;
+}
+
+.cohen-icons-list .cohen-icons-item .img img {
+  width: 5.3vw;
+  height: 5.3vw;
+  object-fit: contain;
+  object-position: center;
+}
+
+.cohen-icons-list .cohen-icons-item .img-bordered {
+  border: 1px solid #7d7d7d;
+}
+
+.cohen-icons-list.col-5 {
+  justify-content: center;
+}
+
+.cohen-icons-list.col-5 .cohen-icons-item {
+  flex: 0 0 20%;
+}
+
+/* #Home Products
+================================================== */
+.cohen-home-products ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cohen-home-products li {
+  flex: 0 0 50%;
+  display: flex;
+}
+
+.cohen-home-products li:nth-child(3),
+.cohen-home-products li:nth-child(4),
+.cohen-home-products li:nth-child(7),
+.cohen-home-products li:nth-child(8),
+.cohen-home-products li:nth-child(11),
+.cohen-home-products li:nth-child(12),
+.cohen-home-products li:nth-child(15),
+.cohen-home-products li:nth-child(16) {
+  flex-direction: row-reverse;
+}
+
+.cohen-home-products li:nth-child(3) .text::after,
+.cohen-home-products li:nth-child(4) .text::after,
+.cohen-home-products li:nth-child(7) .text::after,
+.cohen-home-products li:nth-child(8) .text::after,
+.cohen-home-products li:nth-child(11) .text::after,
+.cohen-home-products li:nth-child(12) .text::after,
+.cohen-home-products li:nth-child(15) .text::after,
+.cohen-home-products li:nth-child(16) .text::after {
+  left: 0;
+  right: auto;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* Img */
+.cohen-home-products li .img {
+  flex: 0 0 50%;
+}
+
+.cohen-home-products li .img img {
+  width: 100%;
+  height: 25vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Text */
+.cohen-home-products li .text {
+  padding: 2.5vw 3.65vw 2vw 2.5vw;
+  line-height: 1.5;
+  position: relative;
+  z-index: 1;
+}
+
+.cohen-home-products li .text::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%) rotate(45deg);
+  width: 3.125vw;
+  height: 3.125vw;
+  background-color: white;
+  z-index: -1;
+}
+
+.cohen-home-products li p {
+  margin-bottom: 2vw;
+}
+
+.cohen-home-products .text-line {
+  width: 70%;
+}
+
+/* #Info Section
+================================================== */
+.cohen-info-section {
+  padding: 4.68vw 0;
+  background-image: url('../img/global/bg-texture.jpg');
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cohen-info-section .container {
+  width: 62%;
+  display: flex;
+  align-items: center;
+}
+
+.cohen-info-section .text {
+  flex: 0 0 50%;
+  padding-left: 3.125vw;
+}
+
+.cohen-info-section .img {
+  flex: 0 0 50%;
+}
+
+.cohen-info-section .img img {
+  width: 100%;
+}
+
+/* #Newsletter
+================================================== */
+.cohen-newsletter {
+  background-image: url('../img/global/bg-newsletter.jpg');
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 2.6vw 0;
+}
+
+.cohen-newsletter .container {
+  width: 62%;
+}
+
+.cohen-newsletter .btn {
+  min-width: 14.5vw;
+  margin-bottom: .8vw;
+}
+
+.cohen-newsletter-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.8vw;
+}
+
+.cohen-newsletter .input-group {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1.8vw;
+}
+
+.cohen-newsletter .input-group input:not(:last-child) {
+  margin-left: .8vw;
+}
