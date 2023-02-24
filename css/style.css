@@ -165,6 +165,10 @@ body {
   fill: #333;
 }
 
+.cohen-header-link-list .collapsible:hover .collapse-toggler .simbol svg {
+  transform: rotate(180deg);
+}
+
 @media (min-width: 1024px) {
   .cohen-header-link-list {
     display: flex;
@@ -227,6 +231,28 @@ body {
   .cohen-header-link .collapsible {
     display: flex;
     align-items: flex-end;
+  }
+
+  .cohen-header-action::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-80%) translateX(77%) rotate(45deg);
+    width: 5vw;
+    height: 10vw;
+    background-color: white;
+    border-radius: 1vw;
+    z-index: -1;
+    transition: all .3s ease;
+  }
+
+  .cohen-header.cohen-header-scrolled .cohen-header-action {
+    color: white;
+  }
+
+  .cohen-header.cohen-header-scrolled .cohen-header-action::before {
+    background-color: #333;
   }
 }
 
@@ -591,19 +617,6 @@ body {
   z-index: 10;
 }
 
-.cohen-banner::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 8%;
-  transform: translateY(-75%) translateX(50%) rotate(45deg);
-  width: 5vw;
-  height: 10vw;
-  background-color: white;
-  border-radius: 1vw;
-  z-index: 10;
-}
-
 /* Img */
 .cohen-banner .img,
 .cohen-banner .img img {
@@ -670,6 +683,118 @@ body {
   opacity: .9;
 }
 
+/* #Banner 2
+================================================== */
+.cohen-banner-2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.cohen-banner-2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 25.5%;
+  transform: translateY(-70%) translateX(-50%) rotate(45deg);
+  width: 25vw;
+  height: 30vw;
+  background-color: white;
+  border-radius: 4vw;
+  z-index: 10;
+}
+
+/* Img */
+.cohen-banner-2 .img,
+.cohen-banner-2 .img img {
+  width: 100%;
+  height: 25vw;
+  object-fit: cover;
+  object-position: top center;
+  position: relative;
+}
+
+.cohen-banner-2 .img::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.781), transparent);
+  z-index: 1;
+}
+
+.cohen-banner-2 .img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+/* Text */
+.cohen-banner-2 .text {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  color: #fccc07;
+}
+
+.cohen-banner-2 .text h1,
+.cohen-banner-2 .text h2,
+.cohen-banner-2 .text h3,
+.cohen-banner-2 .text h4 {
+  line-height: 1;
+}
+
+.cohen-banner-2 .text p {
+  margin-top: .5vw;
+}
+
+.cohen-banner-2 .text-shape {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: #fccb06;
+  width: 20.5vw;
+  height: 20.5vw;
+  z-index: -1;
+  border-radius: 4.68vw;
+  opacity: .9;
+}
+
+/* #Breadcrumbs
+================================================== */
+.cohen-breadcrumbs .container {
+  width: 62%;
+  border-bottom: 1px solid #cfcfcf;
+  padding: .78vw 0;
+}
+
+.cohen-breadcrumbs ul {
+  display: flex;
+}
+
+.cohen-breadcrumbs ul li {
+  margin-left: .25vw;
+}
+
+.cohen-breadcrumbs ul li:not(:last-child)::after {
+  content: '/';
+  margin-right: .25vw;
+}
+
+.cohen-breadcrumbs ul li:last-child {
+  font-weight: 700;
+}
+
 /* #Icons
 ================================================== */
 .cohen-icons .container {
@@ -689,7 +814,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 .5vw;
+  padding: 0 .78vw;
   line-height: 1.2;
 }
 
@@ -704,14 +829,14 @@ body {
 }
 
 .cohen-icons-list .cohen-icons-item .img img {
-  width: 5.3vw;
-  height: 5.3vw;
+  width: 5vw;
+  height: 5vw;
   object-fit: contain;
   object-position: center;
 }
 
 .cohen-icons-list .cohen-icons-item .img-bordered {
-  border: 1px solid #7d7d7d;
+  border: 1px solid #7d7d7d71;
 }
 
 .cohen-icons-list.col-5 {
@@ -827,6 +952,39 @@ body {
   width: 100%;
 }
 
+/* #Info Section 2
+================================================== */
+.cohen-info-section-2 {
+  padding: 4.68vw 0;
+  background-image: url('../img/global/bg-texture.jpg');
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cohen-info-section-2 .container {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.cohen-info-section-2 .text {
+  flex-grow: 1;
+  padding-left: 3.125vw;
+}
+
+.cohen-info-section-2 h3 {
+  margin-bottom: 1.3vw;
+}
+
+.cohen-info-section-2 .img {
+  flex: 0 0 10.67vw;
+}
+
+.cohen-info-section-2 .img img {
+  width: 8vw;
+}
+
 /* #Newsletter
 ================================================== */
 .cohen-newsletter {
@@ -864,4 +1022,70 @@ body {
 
 .cohen-newsletter .input-group input:not(:last-child) {
   margin-left: .8vw;
+}
+
+/* #About Section
+================================================== */
+.cohen-about-section {
+  padding: 3.125vw 0 4.16vw 0;
+}
+
+.cohen-about-section .container {
+  width: 62%;
+}
+
+.cohen-about-section-header {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 2.34vw;
+  width: 60%;
+}
+
+.cohen-about-section-header h3 {
+  margin-bottom: .8vw;
+}
+
+/* #Media Boxes
+================================================== */
+.cohen-media-boxes {
+
+}
+
+.cohen-media-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 1.5;
+}
+
+.cohen-media-box:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.cohen-media-box:not(:last-child) {
+  margin-bottom: 1.8vw;
+}
+
+.cohen-media-box .img {
+  flex: 0 0 30.2vw;
+}
+
+.cohen-media-box .img img {
+  width: 100%;
+  height: 17vw;
+  object-fit: contain;
+  object-position: center;
+}
+
+.cohen-media-box .text {
+  padding-left: 2vw;
+}
+
+.cohen-media-box:nth-child(even) .text {
+  padding-right: 2vw;
+  padding-left: 0;
+}
+
+.cohen-media-box p:not(:last-child) {
+  margin-bottom: .5vw;
 }
