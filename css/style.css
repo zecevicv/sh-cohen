@@ -23,6 +23,25 @@ body {
   background-color: #fccb06;
 }
 
+.text-line-center {
+  position: relative;
+  padding-bottom: 1.04vw;
+  margin-bottom: 1.04vw;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.text-line-center::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+  width: 3.2vw;
+  height: 3px;
+  background-color: #fccb06;
+}
+
 /* #Btn
 ================================================== */
 /* Btn */
@@ -799,6 +818,7 @@ body {
 ================================================== */
 .cohen-icons .container {
   width: 65%;
+  padding: 4.16vw 0;
 }
 
 .cohen-icons-list {
@@ -807,14 +827,12 @@ body {
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 4.16vw 0;
 }
 
 .cohen-icons-list .cohen-icons-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 .78vw;
   line-height: 1.2;
 }
 
@@ -826,6 +844,7 @@ body {
   justify-content: center;
   border-radius: 50%;
   margin-bottom: 1.3vw;
+  background-color: white;
 }
 
 .cohen-icons-list .cohen-icons-item .img img {
@@ -845,6 +864,33 @@ body {
 
 .cohen-icons-list.col-5 .cohen-icons-item {
   flex: 0 0 20%;
+}
+
+.cohen-icons-list .cohen-icons-item .text {
+  padding: 0 1vw;
+}
+
+.cohen-icons-list .cohen-icons-item p {
+  margin-top: .7vw;
+}
+
+.cohen-icons-title {
+  text-align: center;
+  margin-bottom: 2.6vw;
+}
+
+/* #Icons 2
+================================================== */
+.cohen-icons-2 {
+  background-image: url('../img/global/bg-texture.jpg');
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cohen-icons-2 .container {
+  width: 65%;
+  padding: 4.16vw 0;
 }
 
 /* #Home Products
@@ -1034,23 +1080,39 @@ body {
   width: 62%;
 }
 
-.cohen-about-section-header {
+.cohen-about-section .cohen-about-section-header {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 2.34vw;
   width: 60%;
 }
 
-.cohen-about-section-header h3 {
+.cohen-about-section .cohen-about-section-header h3 {
   margin-bottom: .8vw;
+}
+
+/* #About Section 2
+================================================== */
+.cohen-about-section-2 {
+  padding: 3.125vw 0;
+}
+
+.cohen-about-section-2 .container {
+  width: 62%;
+}
+
+.cohen-about-section-2 .cohen-about-section-header {
+  text-align: center;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.cohen-about-section-2 p {
+  line-height: 1.5;
 }
 
 /* #Media Boxes
 ================================================== */
-.cohen-media-boxes {
-
-}
-
 .cohen-media-box {
   display: flex;
   align-items: center;
@@ -1088,4 +1150,74 @@ body {
 
 .cohen-media-box p:not(:last-child) {
   margin-bottom: .5vw;
+}
+
+/* #Team
+================================================== */
+.cohen-team {
+  padding: 3.125vw 0;
+}
+
+.cohen-team .container {
+  width: 62%;
+}
+
+.cohen-team-title {
+  text-align: center;
+  margin-bottom: 2.6vw;
+}
+
+.cohen-team ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.cohen-team ul li {
+  flex: 0 0 33.333333%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: .78vw;
+}
+
+.cohen-team .img img {
+  width: 15.36vw;
+  height: 15.36vw;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: .78vw;
+}
+
+/* #Logos
+================================================== */
+.cohen-logos {
+  padding: 3.125vw 0 3.65vw 0;
+}
+
+.cohen-logos .container {
+  width: 62%;
+}
+
+.cohen-logos ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 -1vw;
+  margin-top: 1.8vw;
+}
+
+.cohen-logos ul li {
+  padding: 0 1vw;
+  flex-grow: 1;
+}
+
+.cohen-logos img {
+  width: 100%;
+  height: 100%;
+  max-width: 10.4vw;
+  max-height: 4.85vw;
+  object-fit: contain;
 }
