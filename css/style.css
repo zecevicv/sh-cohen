@@ -1372,3 +1372,14 @@ body {
   object-fit: cover;
   object-position: center;
 }
+
+/* #Delivery
+================================================== */
+.cohen-delivery {
+  text-align: center;
+  padding: 3.65vw 0;
+}
+
+.cohen-delivery .container {
+  width: 55%;
+} 
