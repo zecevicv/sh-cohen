@@ -1383,3 +1383,42 @@ body {
 .cohen-delivery .container {
   width: 55%;
 } 
+
+/* #Safety
+================================================== */
+.cohen-safety {
+  text-align: center;
+  padding: 3.65vw 0 4.16vw 0;
+}
+
+.cohen-safety .container {
+  width: 62%;
+} 
+
+.cohen-safety .text {
+  margin: 0 auto;
+  width: 54vw;
+  margin-bottom: 3.9vw;
+}
+
+.cohen-safety .img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cohen-safety .img img:nth-child(1),
+.cohen-safety .img img:nth-child(3) {
+  width: 15vw;
+  height: 15vw;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.cohen-safety .img img:nth-child(2) {
+  width: 25.67vw;
+  height: 18.22vw;
+  object-fit: contain;
+  object-position: center;
+}
