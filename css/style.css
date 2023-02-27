@@ -1286,3 +1286,37 @@ body {
 .cohen-product-grid .text {
   padding-left: 2.7vw;
 }
+
+/* #Product Header 2
+================================================== */
+.product-header-2 {
+  text-align: center;
+  padding: 3.125vw 0 4.16vw 0;
+}
+
+.product-header-2 .container {
+  width: 62%;
+}
+
+.product-header-2 .text {
+  margin: 0 auto;
+  width: 48vw;
+  margin-bottom: 3.65vw;
+}
+
+.product-header-2 h2 {
+  margin-bottom: 1.5vw;
+}
+
+.product-header-2 .img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-header-2 .img img {
+  width: 30.15vw;
+  height: 16.9vw;
+  object-fit: cover;
+  object-position: center;
+}
