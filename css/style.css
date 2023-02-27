@@ -1221,3 +1221,68 @@ body {
   max-height: 4.85vw;
   object-fit: contain;
 }
+
+/* #Product Header
+================================================== */
+.cohen-product-header {
+  padding: 4.68vw 0;
+}
+
+.cohen-product-header .container {
+  width: 62%;
+  display: flex;
+  align-items: center;
+}
+
+.cohen-product-header .text {
+  flex: 0 0 50%;
+  padding-left: 6vw;
+}
+
+.cohen-product-header .img {
+  flex: 0 0 50%;
+}
+
+.cohen-product-header .img img {
+  width: 100%;
+  height: 18.22vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* #Product Grid
+================================================== */
+.cohen-product-grid {
+  padding: 4.68vw 0;
+  background-image: url('../img/global/bg-texture.jpg');
+  background-repeat: repeat;
+  background-position: center;
+}
+
+.cohen-product-grid .container {
+  width: 62%;
+}
+
+.cohen-product-grid ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -2vw;
+}
+
+.cohen-product-grid ul li {
+  flex: 0 0 47%;
+  padding-bottom: 2vw;
+}
+
+.cohen-product-grid .img img {
+  width: 100%;
+  height: 16.4vw;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 1.3vw;
+}
+
+.cohen-product-grid .text {
+  padding-left: 2.7vw;
+}
