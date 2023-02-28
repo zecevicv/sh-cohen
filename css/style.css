@@ -1510,3 +1510,72 @@ body {
   object-fit: cover;
   object-position: center;
 }
+
+/* #Contact
+================================================== */
+.cohen-contact {
+  background-image: url('../img/global/bg-texture.jpg');
+  background-repeat: repeat;
+  background-position: center;
+}
+
+.cohen-contact .container {
+  display: flex;
+  align-items: center;
+}
+
+/* Text */
+.cohen-contact .text {
+  flex: 0 0 50%;
+  padding-right: 18.8vw;
+  padding-left: 2.6vw;
+}
+
+/* Img */
+.cohen-contact .img {
+  flex: 0 0 50%;
+}
+
+.cohen-contact .img img {
+  height: 36.5vw;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Form */
+.cohen-contact-form {
+  margin-bottom: 1.3vw;
+}
+
+.cohen-contact-form .input-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cohen-contact-form .input-group input {
+  flex: 0 0 48%;
+  margin-bottom: 1vw;
+}
+
+.cohen-contact-form .btn {
+  margin-top: 1.5vw;
+  width: 100%;
+}
+
+/* Info */
+.cohen-contact-info {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.6;
+}
+
+.cohen-contact-info .col {
+  flex: 0 0 45%;
+}
+
+.cohen-contact-info .col > div:not(:last-child) {
+  margin-bottom: 1vw;
+}
