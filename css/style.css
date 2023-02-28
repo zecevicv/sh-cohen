@@ -858,14 +858,6 @@ body {
   border: 1px solid #7d7d7d71;
 }
 
-.cohen-icons-list.col-5 {
-  justify-content: center;
-}
-
-.cohen-icons-list.col-5 .cohen-icons-item {
-  flex: 0 0 20%;
-}
-
 .cohen-icons-list .cohen-icons-item .text {
   padding: 0 1vw;
 }
@@ -877,6 +869,30 @@ body {
 .cohen-icons-title {
   text-align: center;
   margin-bottom: 2.6vw;
+}
+
+/* Col 3 */
+.cohen-icons-list.col-3 {
+  justify-content: center;
+  margin: -1.2vw 0;
+}
+
+.cohen-icons-list.col-3 .cohen-icons-item {
+  flex: 0 0 33%;
+  padding: 1.2vw 0;
+}
+
+.cohen-icons-list.col-3 .cohen-icons-item .text {
+  padding: 0 3vw;
+}
+
+/* Col 5 */
+.cohen-icons-list.col-5 {
+  justify-content: center;
+}
+
+.cohen-icons-list.col-5 .cohen-icons-item {
+  flex: 0 0 20%;
 }
 
 /* #Icons 2
@@ -1420,5 +1436,33 @@ body {
   width: 25.67vw;
   height: 18.22vw;
   object-fit: contain;
+  object-position: center;
+}
+
+/* #Planning Text
+================================================== */
+.cohen-planning-text {
+  padding-top: 3.9vw;
+  text-align: center;
+}
+
+.cohen-planning-text .container {
+  width: 35%;
+}
+
+/* #Planning Img
+================================================== */
+.cohen-planning-img {
+  padding-bottom: 5.2vw;
+}
+
+.cohen-planning-img .container {
+  width: 62%;
+}
+
+.cohen-planning-img img {
+  width: 100%;
+  height: 34.375vw;
+  object-fit: cover;
   object-position: center;
 }
