@@ -886,6 +886,19 @@ body {
   padding: 0 3vw;
 }
 
+/* Col 4 */
+.cohen-icons-list.col-4 {
+  justify-content: center;
+}
+
+.cohen-icons-list.col-4 .cohen-icons-item {
+  flex: 0 0 25%;
+}
+
+.cohen-icons-list.col-4 .cohen-icons-item .text {
+  padding: 0 1.75vw;
+}
+
 /* Col 5 */
 .cohen-icons-list.col-5 {
   justify-content: center;
@@ -1463,6 +1476,37 @@ body {
 .cohen-planning-img img {
   width: 100%;
   height: 34.375vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* #QA Text
+================================================== */
+.cohen-qa-text {
+  padding-top: 3.9vw;
+  text-align: center;
+}
+
+.cohen-qa-text .container {
+  width: 55%;
+}
+
+/* #QA Img
+================================================== */
+.cohen-qa-img {
+  padding-bottom: 5.2vw;
+}
+
+.cohen-qa-img .container {
+  width: 62%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cohen-qa-img img {
+  width: 49.25%;
+  height: 41.66vw;
   object-fit: cover;
   object-position: center;
 }
