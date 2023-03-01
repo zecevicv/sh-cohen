@@ -1,0 +1,178 @@
+/* #Global
+================================================== */
+.text-line::after {
+  left: 0;
+  right: auto;
+}
+
+/* #Checkox
+================================================== */
+.checkbox label {
+  padding-left: .5vw;
+  padding-right: 0;
+}
+
+/* #Header
+================================================== */
+.cohen-header-action {
+  left: 9.27vw;
+  right: auto;
+}
+
+.cohen-header-link svg {
+  margin-left: .5vw;
+  margin-right: 0;
+}
+
+@media (min-width: 1024px) {
+  .cohen-header-link-list .collapse {
+    right: auto;
+    left: 0;
+  }
+
+  .cohen-header-link:not(:last-child) {
+    margin-right: 2.34vw;
+    margin-left: 0;
+  }
+
+  .cohen-header-action::before {
+    left: 0;
+    right: auto;
+    transform: translateY(-80%) translateX(-5%) rotate(45deg);
+  }
+}
+
+/* #Footer
+================================================== */
+.cohen-footer-top ul li:not(:last-child) {
+  margin-right: 3.125vw;
+  margin-right: 0;
+}
+
+.cohen-footer .social ul li:not(:last-child) {
+  margin-left: 0;
+  margin-right: 1.5vw;
+}
+
+.cohen-footer .logo img {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+/* #Banner
+================================================== */
+.cohen-banner::after {
+  left: auto;
+  right: 23.5%;
+  transform: translateY(-70%) translateX(50%) rotate(45deg);
+}
+
+/* #Banner 2
+================================================== */
+.cohen-banner-2::after {
+  left: auto;
+  right: 23.5%;
+  transform: translateY(-70%) translateX(50%) rotate(45deg);
+}
+
+/* #Breadcrumbs
+================================================== */
+.cohen-breadcrumbs ul li {
+  margin-left: 0;
+  margin-right: .25vw;
+}
+
+.cohen-breadcrumbs ul li:not(:last-child)::after {
+  margin-left: .25vw;
+  margin-right: 0;
+}
+
+/* #Home Products
+================================================== */
+.cohen-home-products li:nth-child(3) .text::after,
+.cohen-home-products li:nth-child(4) .text::after,
+.cohen-home-products li:nth-child(7) .text::after,
+.cohen-home-products li:nth-child(8) .text::after,
+.cohen-home-products li:nth-child(11) .text::after,
+.cohen-home-products li:nth-child(12) .text::after,
+.cohen-home-products li:nth-child(15) .text::after,
+.cohen-home-products li:nth-child(16) .text::after {
+  left: auto;
+  right: 0;
+  transform: translate(50%, -50%) rotate(45deg);
+}
+
+/* Text */
+.cohen-home-products li .text {
+  padding: 2.5vw 3.65vw 2vw 2.5vw;
+  line-height: 1.5;
+  position: relative;
+  z-index: 1;
+}
+
+.cohen-home-products li .text::after {
+  right: auto;
+  left: 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* #Info Section
+================================================== */
+.cohen-info-section .text {
+  padding-left: 0;
+  padding-right: 3.125vw;
+}
+
+/* #Info Section 2
+================================================== */
+.cohen-info-section-2 .text {
+  padding-left: 0;
+  padding-right: 3.125vw;
+}
+
+/* #Newsletter
+================================================== */
+.cohen-newsletter .input-group input:not(:last-child) {
+  margin-left: 0;
+  margin-right: .8vw;
+}
+
+/* #Media Boxes
+================================================== */
+.cohen-media-box .text {
+  padding-left: 0;
+  padding-right: 2vw;
+}
+
+.cohen-media-box:nth-child(even) .text {
+  padding-right: 0;
+  padding-left: 2vw;
+}
+
+/* #Product Header
+================================================== */
+.cohen-product-header .text {
+  padding-left: 0;
+  padding-right: 6vw;
+}
+
+/* #Product Grid
+================================================== */
+.cohen-product-grid .text {
+  padding-left: 0;
+  padding-right: 2.7vw;
+}
+
+/* #Product Header 3
+================================================== */
+.product-header-3 .text ul {
+  padding-right: 0;
+  padding-left: 1vw;
+}
+
+/* #Contact
+================================================== */
+.cohen-contact .text {
+  padding-right: 2.6vw;
+  padding-left: 18.8vw;
+}
