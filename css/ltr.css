@@ -12,6 +12,13 @@
   padding-right: 0;
 }
 
+@media (max-width: 1023.98px) {
+  .checkbox label {
+    padding-right: 0;
+    padding-left: 3vw;
+  }
+}
+
 /* #Header
 ================================================== */
 .cohen-header-action {
@@ -42,6 +49,13 @@
   }
 }
 
+@media (max-width: 1023.98px) {
+  .cohen-header-links .collapse-toggler .simbol {
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+
 /* #Footer
 ================================================== */
 .cohen-footer-top ul li:not(:last-child) {
@@ -57,6 +71,13 @@
 .cohen-footer .logo img {
   margin-right: 0;
   margin-left: auto;
+}
+
+@media (max-width: 1023.98px) {
+  .cohen-footer .social ul li:not(:last-child) {
+    margin-left: 0;
+    margin-right: 5vw;
+  }
 }
 
 /* #Banner
@@ -87,47 +108,65 @@
   margin-right: 0;
 }
 
+@media (max-width: 1023.98px) {
+  .cohen-breadcrumbs ul li {
+    margin-left: 0;
+    margin-right: 2vw;
+  }
+
+  .cohen-breadcrumbs ul li:not(:last-child)::after {
+    margin-right: 0;
+    margin-left: 2vw;
+  }
+}
+
 /* #Home Products
 ================================================== */
-.cohen-home-products li:nth-child(3) .text::after,
-.cohen-home-products li:nth-child(4) .text::after,
-.cohen-home-products li:nth-child(7) .text::after,
-.cohen-home-products li:nth-child(8) .text::after,
-.cohen-home-products li:nth-child(11) .text::after,
-.cohen-home-products li:nth-child(12) .text::after,
-.cohen-home-products li:nth-child(15) .text::after,
-.cohen-home-products li:nth-child(16) .text::after {
-  left: auto;
-  right: 0;
-  transform: translate(50%, -50%) rotate(45deg);
-}
-
-/* Text */
-.cohen-home-products li .text {
-  padding: 2.5vw 3.65vw 2vw 2.5vw;
-  line-height: 1.5;
-  position: relative;
-  z-index: 1;
-}
-
-.cohen-home-products li .text::after {
-  right: auto;
-  left: 0;
-  transform: translate(-50%, -50%) rotate(45deg);
+@media (min-width: 1023.98px) {
+  .cohen-home-products li:nth-child(3) .text::after,
+  .cohen-home-products li:nth-child(4) .text::after,
+  .cohen-home-products li:nth-child(7) .text::after,
+  .cohen-home-products li:nth-child(8) .text::after,
+  .cohen-home-products li:nth-child(11) .text::after,
+  .cohen-home-products li:nth-child(12) .text::after,
+  .cohen-home-products li:nth-child(15) .text::after,
+  .cohen-home-products li:nth-child(16) .text::after {
+    left: auto;
+    right: 0;
+    transform: translate(50%, -50%) rotate(45deg);
+  }
+  
+  /* Text */
+  .cohen-home-products li .text {
+    padding: 2.5vw 3.65vw 2vw 2.5vw;
+    line-height: 1.5;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .cohen-home-products li .text::after {
+    right: auto;
+    left: 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
 }
 
 /* #Info Section
 ================================================== */
-.cohen-info-section .text {
-  padding-left: 0;
-  padding-right: 3.125vw;
+@media (min-width: 1023.98px) {
+  .cohen-info-section .text {
+    padding-left: 0;
+    padding-right: 3.125vw;
+  }
 }
 
 /* #Info Section 2
 ================================================== */
-.cohen-info-section-2 .text {
-  padding-left: 0;
-  padding-right: 3.125vw;
+@media (min-width: 1023.98px) {
+  .cohen-info-section-2 .text {
+    padding-left: 0;
+    padding-right: 3.125vw;
+  }
 }
 
 /* #Newsletter
@@ -139,21 +178,31 @@
 
 /* #Media Boxes
 ================================================== */
-.cohen-media-box .text {
-  padding-left: 0;
-  padding-right: 2vw;
-}
-
-.cohen-media-box:nth-child(even) .text {
-  padding-right: 0;
-  padding-left: 2vw;
+@media (min-width: 1023.98px) {
+  .cohen-media-box .text {
+    padding-left: 0;
+    padding-right: 2vw;
+  }
+  
+  .cohen-media-box:nth-child(even) .text {
+    padding-right: 0;
+    padding-left: 2vw;
+  }
 }
 
 /* #Product Header
 ================================================== */
-.cohen-product-header .text {
-  padding-left: 0;
-  padding-right: 6vw;
+@media (min-width: 1023.98px) {
+  .cohen-product-header .text {
+    padding-left: 0;
+    padding-right: 6vw;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .cohen-product-header .text .text-line::after {
+    left: auto;
+  }
 }
 
 /* #Product Grid
@@ -170,9 +219,22 @@
   padding-left: 1vw;
 }
 
+@media (max-width: 1023.98px) {
+  .product-header-3 .text ul {
+    padding-right: 0;
+    padding-left: 8vw;
+  }
+}
+
 /* #Contact
 ================================================== */
 .cohen-contact .text {
   padding-right: 2.6vw;
   padding-left: 18.8vw;
+}
+
+@media (max-width: 1023.98px) {
+  .cohen-contact .text {
+    padding: 10vw 4%;
+  }
 }

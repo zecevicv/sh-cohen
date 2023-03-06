@@ -42,6 +42,30 @@ body {
   background-color: #fccb06;
 }
 
+@media (max-width: 1023.98px) {
+  body {
+    padding-top: 20.53vw;
+  }
+
+  .text-line {
+    padding-bottom: 4vw;
+    margin-bottom: 4vw;
+  }
+
+  .text-line::after {
+    width: 15vw;
+  }
+
+  .text-line-center {
+    padding-bottom: 4vw;
+    margin-bottom: 4vw;
+  }
+
+  .text-line-center::after {
+    width: 15vw;
+  }
+}
+
 /* #Btn
 ================================================== */
 /* Btn */
@@ -77,6 +101,23 @@ body {
   padding: 0 2vw;
 }
 
+@media (max-width: 1023.98px) {
+
+  /* Btn */
+  .btn {
+    font-size: 5vw;
+    height: 12vw;
+    padding: 0 8vw;
+  }
+
+  /* Btn Small */
+  .btn-small {
+    font-size: 4.26vw;
+    height: 8vw;
+    padding: 0 8vw;
+  }
+}
+
 /* #Input
 ================================================== */
 /* Primary */
@@ -91,6 +132,14 @@ body {
 
 .input-primary::placeholder {
   color: #333;
+}
+
+@media (max-width: 1023.98px) {
+  .input-primary {
+    height: 12vw;
+    padding: 0 4vw;
+    border-radius: 500px;
+  }
 }
 
 /* #Checkox
@@ -115,6 +164,23 @@ body {
 
 .checkbox label {
   padding-right: .5vw;
+}
+
+@media (max-width: 1023.98px) {
+  .checkbox input {
+    width: 5vw;
+    height: 5vw;
+    flex: 0 0 5vw;
+    border-radius: 3px;
+  }
+  
+  .checkbox input:checked {
+    background-size: 3vw auto;
+  }
+  
+  .checkbox label {
+    padding-right: 3vw;
+  }
 }
 
 /* #Header
@@ -157,7 +223,7 @@ body {
 }
 
 .cohen-header-links .cohen-header-link .collapse {
-  color: #333!important;
+  color: #333 !important;
 }
 
 .cohen-header-action {
@@ -184,10 +250,6 @@ body {
   fill: #333;
 }
 
-.cohen-header-link-list .collapsible:hover .collapse-toggler .simbol svg {
-  transform: rotate(180deg);
-}
-
 @media (min-width: 1024px) {
   .cohen-header-link-list {
     display: flex;
@@ -209,7 +271,7 @@ body {
   }
 
   .cohen-header-link-list .collapse {
-    height: auto!important;
+    height: auto !important;
     position: absolute;
     top: 3.5vw;
     right: 0;
@@ -273,77 +335,40 @@ body {
   .cohen-header.cohen-header-scrolled .cohen-header-action::before {
     background-color: #333;
   }
+
+  .cohen-header-link-list .collapsible:hover .collapse-toggler .simbol svg {
+    transform: rotate(180deg);
+  }
 }
 
 @media (max-width: 1023.98px) {
-  /* .cohen-header {
+  .cohen-header {
     padding-top: 0;
-    background-color: #F8F2E2;
+    background-color: white;
     box-shadow: 0 12px 24px rgba(0, 0, 0, .1);
+    padding: 0;
   }
-  
+
   .cohen-header .container {
     width: 92%;
-    padding: 1.7vw 0;
+    padding: 6vw 0;
     box-shadow: none;
     background-image: none;
     background-color: transparent;
   }
 
   .cohen-header-logo img {
-    width: 14.13vw;
-  }  
-  
+    width: 30vw;
+  }
+
   .cohen-header-action {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
     margin-bottom: 5.33vw;
+    position: static;
+    order: 2;
+    height: 14.66vw;
+    font-weight: 500;
   }
 
-  .cohen-header-search {
-    flex-grow: 1;
-    margin-right: 0;
-    margin-left: 5.33vw;
-  }
-
-  .cohen-header-search form {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 11.33vw;
-    border: 1px solid #D2CDBF;
-    border-radius: 1.33vw;
-    padding: 0 4vw 0 3.33vw;
-  }
-
-  .cohen-header-search {
-    margin-right: 0;
-  }
-  
-  .cohen-header-search img {
-    width: 6.26vw;
-    margin-right: 4vw;
-  }
-
-  .cohen-header-search input {
-    background-color: transparent;
-    border: none;
-    color: black;
-    flex-grow: 1;
-  }
-
-  .cohen-header-search input::placeholder {
-    color: black;
-  }
-  
-  .cohen-header-language select {
-    background-size: 2.75vw auto;
-    background-position: 100% 50%;
-    padding-right: 3.5vw;
-    padding-bottom: .05vw;
-  }
-  
   .cohen-header-hamburger img {
     width: 7vw;
   }
@@ -352,9 +377,9 @@ body {
     position: fixed;
     left: 0;
     width: 100%;
-    top: 19.73vw;
-    height: calc(100% - 19.73vw);
-    background-color: #F8F2E2;
+    top: 20.53vw;
+    height: calc(100% - 20.53vw);
+    background-color: white;
     z-index: -1;
     opacity: 0;
     visibility: hidden;
@@ -367,6 +392,7 @@ body {
     overflow-y: auto;
     padding-top: 7.33vw;
     box-shadow: inset 0 12px 24px rgba(0, 0, 0, .1);
+    color: #333;
   }
 
   .cohen-header.show .cohen-header-menu {
@@ -376,30 +402,42 @@ body {
 
   .cohen-header-links {
     width: 100%;
-    text-align: center;
   }
 
   .cohen-header-link {
-    border-bottom: 1px solid #BE901C;
+    border-bottom: 1px solid #7d7d7d71;
   }
-  
-  .cohen-header-link > a,
+
+  .cohen-header-link>a,
   .cohen-header-links .collapse-toggler {
     font-weight: 500;
     height: 14.66vw;
     display: flex;
     align-items: center;
-    justify-content: center;
   }
 
   .cohen-header-links .collapse-toggler .simbol {
-    margin-right: 2vw;
+    margin-right: auto;
   }
 
-  .cohen-header-links .collapse > div {
+  .cohen-header-links .collapse>div {
     padding-bottom: 6vw;
     line-height: 2;
-  } */
+  }
+
+  .cohen-header-links .collapse a {
+    display: block;
+  }
+
+  .cohen-header-link svg {
+    width: 3.5vw;
+    margin-right: 0.5vw;
+    fill: #333;
+  }
+
+  .cohen-header-link-list .collapsible.show .collapse-toggler .simbol svg {
+    transform: rotate(180deg);
+  }
 }
 
 /* #Hamburger
@@ -535,7 +573,7 @@ body {
   .hamburger--slider .hamburger-inner:before {
     top: 2.76vw;
   }
-  
+
   .hamburger--slider .hamburger-inner:after {
     top: 5.53vw;
   }
@@ -559,7 +597,6 @@ body {
   padding: 2.6vw 0;
   background-image: url('../img/global/bg-footer.jpg');
   background-repeat: repeat;
-  background-size: cover;
   background-position: center;
 }
 
@@ -614,6 +651,81 @@ body {
 .cohen-footer .logo img {
   width: 10.625vw;
   margin-right: auto;
+}
+
+@media (max-width: 1023.98px) {
+  .cohen-footer {
+    padding: 15vw 0;
+    background-size: contain;
+  }
+
+  .cohen-footer .container {
+    width: 90%;
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    padding-bottom: 20vw;
+  }
+
+  /* Top */
+  .cohen-footer-top ul {
+    display: block;
+    text-align: center;
+  }
+
+  .cohen-footer-top ul li {
+    padding: 4vw 0;
+    font-weight: 500;
+  }
+
+  .cohen-footer-top ul li:not(:last-child) {
+    margin-left: 0;
+    border-bottom: 1px solid #7d7d7d71;
+  }
+
+  /* Bottom */
+  .cohen-footer-bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .cohen-footer .social {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .cohen-footer .social ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cohen-footer .social ul li:not(:last-child) {
+    margin-left: 5vw;
+  }
+
+  .cohen-footer .social img {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .cohen-footer .cert,
+  .cohen-footer .logo {
+    flex: 0;
+  }
+
+  .cohen-footer .cert {
+    display: none;
+  }
+
+  .cohen-footer .logo img {
+    width: 40vw;
+    margin-right: 0;
+    margin-bottom: 11vw;
+  }
 }
 
 /* #Banner
@@ -702,6 +814,34 @@ body {
   opacity: .9;
 }
 
+@media (max-width: 1023.98px) {
+  .cohen-banner::after {
+    display: none;
+  }
+
+  /* Img */
+  .cohen-banner .img,
+  .cohen-banner .img img {
+    height: 133.33vw;
+  }
+
+  /* Text */
+  .cohen-banner .text {
+    top: 48%;
+    width: 90%;
+  }
+
+  .cohen-banner .text p {
+    margin-top: 2vw;
+  }
+
+  .cohen-banner .text-shape {
+    width: 69vw;
+    height: 69vw;
+    border-radius: 15vw;
+  }
+}
+
 /* #Banner 2
 ================================================== */
 .cohen-banner-2 {
@@ -750,7 +890,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color:rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
 
@@ -789,6 +929,28 @@ body {
   opacity: .9;
 }
 
+@media (max-width: 1023.98px) {
+  .cohen-banner-2::after {
+    display: none;
+  }
+
+  /* Img */
+  .cohen-banner-2 .img,
+  .cohen-banner-2 .img img {
+    height: 75vw;
+  }
+
+  /* Text */
+  .cohen-banner-2 .text {
+    top: 46%;
+    width: 70%;
+  }
+
+  .cohen-banner-2 .text p {
+    margin-top: 2vw;
+  }
+}
+
 /* #Breadcrumbs
 ================================================== */
 .cohen-breadcrumbs .container {
@@ -812,6 +974,22 @@ body {
 
 .cohen-breadcrumbs ul li:last-child {
   font-weight: 700;
+}
+
+@media (max-width: 1023.98px) {
+  .cohen-breadcrumbs .container {
+    width: 92%;
+    border-bottom: 1px solid #cfcfcf;
+    padding: 4vw 0;
+  }
+
+  .cohen-breadcrumbs ul li {
+    margin-left: 2vw;
+  }
+
+  .cohen-breadcrumbs ul li:not(:last-child)::after {
+    margin-right: 2vw;
+  }
 }
 
 /* #Icons
@@ -908,6 +1086,76 @@ body {
   flex: 0 0 20%;
 }
 
+@media (max-width: 1023.98px) {
+  .cohen-icons .container {
+    width: 98%;
+    padding: 18vw 0;
+  }
+
+  .cohen-icons-list .cohen-icons-item .img {
+    width: 30vw;
+    height: 30vw;
+    margin-bottom: 4vw;
+  }
+
+  .cohen-icons-list .cohen-icons-item .img img {
+    width: 13.33vw;
+    height: 13.33vw;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .cohen-icons-list .cohen-icons-item .text {
+    padding: 0 4vw;
+  }
+
+  .cohen-icons-list .cohen-icons-item p {
+    margin-top: 2vw;
+  }
+
+  .cohen-icons-title {
+    margin-bottom: 12vw;
+  }
+
+  /* Col 3 */
+  .cohen-icons-list.col-3 {
+    margin: -3vw 0;
+  }
+
+  .cohen-icons-list.col-3 .cohen-icons-item {
+    flex: 0 0 50%;
+    padding: 3vw 0;
+  }
+
+  .cohen-icons-list.col-3 .cohen-icons-item .text {
+    padding: 0 4vw;
+  }
+
+  /* Col 4 */
+  .cohen-icons-list.col-4 {
+    margin: -3vw 0;
+  }
+
+  .cohen-icons-list.col-4 .cohen-icons-item {
+    flex: 0 0 50%;
+    padding: 3vw 0;
+  }
+
+  .cohen-icons-list.col-4 .cohen-icons-item .text {
+    padding: 0 4vw;
+  }
+
+  /* Col 5 */
+  .cohen-icons-list.col-5 {
+    margin: -3vw 0;
+  }
+
+  .cohen-icons-list.col-5 .cohen-icons-item {
+    flex: 0 0 50%;
+    padding: 3vw 0;
+  }
+}
+
 /* #Icons 2
 ================================================== */
 .cohen-icons-2 {
@@ -922,6 +1170,13 @@ body {
   padding: 4.16vw 0;
 }
 
+@media (max-width: 1023.98px) {
+  .cohen-icons-2 .container {
+    width: 98%;
+    padding: 18vw 0;
+  }
+}
+
 /* #Home Products
 ================================================== */
 .cohen-home-products ul {
@@ -932,30 +1187,6 @@ body {
 .cohen-home-products li {
   flex: 0 0 50%;
   display: flex;
-}
-
-.cohen-home-products li:nth-child(3),
-.cohen-home-products li:nth-child(4),
-.cohen-home-products li:nth-child(7),
-.cohen-home-products li:nth-child(8),
-.cohen-home-products li:nth-child(11),
-.cohen-home-products li:nth-child(12),
-.cohen-home-products li:nth-child(15),
-.cohen-home-products li:nth-child(16) {
-  flex-direction: row-reverse;
-}
-
-.cohen-home-products li:nth-child(3) .text::after,
-.cohen-home-products li:nth-child(4) .text::after,
-.cohen-home-products li:nth-child(7) .text::after,
-.cohen-home-products li:nth-child(8) .text::after,
-.cohen-home-products li:nth-child(11) .text::after,
-.cohen-home-products li:nth-child(12) .text::after,
-.cohen-home-products li:nth-child(15) .text::after,
-.cohen-home-products li:nth-child(16) .text::after {
-  left: 0;
-  right: auto;
-  transform: translate(-50%, -50%) rotate(45deg);
 }
 
 /* Img */
@@ -998,6 +1229,62 @@ body {
   width: 70%;
 }
 
+@media (min-width: 1024px) {
+
+  .cohen-home-products li:nth-child(3),
+  .cohen-home-products li:nth-child(4),
+  .cohen-home-products li:nth-child(7),
+  .cohen-home-products li:nth-child(8),
+  .cohen-home-products li:nth-child(11),
+  .cohen-home-products li:nth-child(12),
+  .cohen-home-products li:nth-child(15),
+  .cohen-home-products li:nth-child(16) {
+    flex-direction: row-reverse;
+  }
+
+  .cohen-home-products li:nth-child(3) .text::after,
+  .cohen-home-products li:nth-child(4) .text::after,
+  .cohen-home-products li:nth-child(7) .text::after,
+  .cohen-home-products li:nth-child(8) .text::after,
+  .cohen-home-products li:nth-child(11) .text::after,
+  .cohen-home-products li:nth-child(12) .text::after,
+  .cohen-home-products li:nth-child(15) .text::after,
+  .cohen-home-products li:nth-child(16) .text::after {
+    left: 0;
+    right: auto;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .cohen-home-products ul {
+    display: block;
+  }
+
+  .cohen-home-products li {
+    flex: 0 0 50%;
+    display: block;
+  }
+
+  /* Img */
+  .cohen-home-products li .img img {
+    height: 50vw;
+  }
+
+  /* Text */
+  .cohen-home-products li .text {
+    padding: 8vw 4% 10vw 4%;
+  }
+
+  .cohen-home-products li .text::after {
+    display: none;
+  }
+
+  .cohen-home-products li p {
+    margin-bottom: 8vw;
+  }
+}
+
 /* #Info Section
 ================================================== */
 .cohen-info-section {
@@ -1025,6 +1312,34 @@ body {
 
 .cohen-info-section .img img {
   width: 100%;
+}
+
+@media (max-width: 1023.98px) {
+  .cohen-info-section {
+    padding: 10vw 0 0 0;
+  }
+  
+  .cohen-info-section .container {
+    width: 100%;
+    display: block;
+  }
+  
+  .cohen-info-section .text {
+    padding: 0 4%;
+    padding-bottom: 8vw;
+    line-height: 1.5;
+  }
+  
+  .cohen-info-section .img {
+    flex: 0 0 50%;
+  }
+  
+  .cohen-info-section .img img {
+    width: 100%;
+    height: 66.66vw;
+    object-fit: cover;
+    object-position: center;
+  }
 }
 
 /* #Info Section 2
@@ -1058,6 +1373,38 @@ body {
 
 .cohen-info-section-2 .img img {
   width: 8vw;
+}
+
+@media (max-width: 1023.98px) {
+  .cohen-info-section-2 {
+    padding: 10vw 0;
+    background-image: url('../img/global/bg-texture.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .cohen-info-section-2 .container {
+    width: 92%;
+    display: block;
+  }
+  
+  .cohen-info-section-2 .text {
+    padding-left: 0;
+  }
+  
+  .cohen-info-section-2 h3 {
+    margin-bottom: 3vw;
+  }
+  
+  .cohen-info-section-2 .img {
+    flex: 0 0 10.67vw;
+    margin-bottom: 8vw;
+  }
+  
+  .cohen-info-section-2 .img img {
+    width: 25vw;
+  }
 }
 
 /* #Newsletter
@@ -1099,6 +1446,46 @@ body {
   margin-left: .8vw;
 }
 
+@media (max-width: 1023.98px) {
+  .cohen-newsletter {
+    padding: 10vw 0;
+  }
+  
+  .cohen-newsletter .container {
+    width: 92%;
+  }
+
+  .cohen-newsletter h2 {
+    padding: 0 7vw;
+    line-height: 1.1;
+    margin-bottom: 2vw;
+  }
+  
+  .cohen-newsletter .btn {
+    min-width: 100%;
+    margin-bottom: 6vw;
+    margin-top: 4vw;
+  }
+  
+  .cohen-newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8vw;
+  }
+  
+  .cohen-newsletter .input-group {
+    display: block;
+    margin-bottom: 4vw;
+  }
+  
+  .cohen-newsletter .input-group input:not(:last-child) {
+    margin-left: 0;
+    margin-bottom: 4vw;
+  }
+}
+
 /* #About Section
 ================================================== */
 .cohen-about-section {
@@ -1118,6 +1505,25 @@ body {
 
 .cohen-about-section .cohen-about-section-header h3 {
   margin-bottom: .8vw;
+}
+
+@media (max-width: 1023.98px) {
+  .cohen-about-section {
+    padding: 10vw 0 0 0;
+  }
+  
+  .cohen-about-section .container {
+    width: 100%;
+  }
+  
+  .cohen-about-section .cohen-about-section-header {
+    margin-bottom: 10vw;
+    width: 92%;
+  }
+  
+  .cohen-about-section .cohen-about-section-header h3 {
+    margin-bottom: 4vw;
+  }
 }
 
 /* #About Section 2
@@ -1140,6 +1546,20 @@ body {
   line-height: 1.5;
 }
 
+@media (max-width: 1023.98px) {
+  .cohen-about-section-2 {
+    padding: 10vw 0;
+  }
+  
+  .cohen-about-section-2 .container {
+    width: 92%;
+  }
+  
+  .cohen-about-section-2 .cohen-about-section-header {
+    width: 100%;
+  }
+}
+
 /* #Media Boxes
 ================================================== */
 .cohen-media-box {
@@ -1147,10 +1567,6 @@ body {
   align-items: center;
   justify-content: space-between;
   line-height: 1.5;
-}
-
-.cohen-media-box:nth-child(even) {
-  flex-direction: row-reverse;
 }
 
 .cohen-media-box:not(:last-child) {
@@ -1172,13 +1588,53 @@ body {
   padding-left: 2vw;
 }
 
-.cohen-media-box:nth-child(even) .text {
-  padding-right: 2vw;
-  padding-left: 0;
-}
-
 .cohen-media-box p:not(:last-child) {
   margin-bottom: .5vw;
+}
+
+@media (min-width: 1023.98px) {
+  .cohen-media-box:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .cohen-media-box:nth-child(even) .text {
+    padding-right: 2vw;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .cohen-media-box {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 1.5;
+  }
+
+  .cohen-media-box:not(:last-child) {
+    margin-bottom: 1.8vw;
+  }
+
+  .cohen-media-box .img {
+    flex: 0;
+    width: 100%;
+  }
+
+  .cohen-media-box .img img {
+    width: 100%;
+    height: 56vw;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .cohen-media-box .text {
+    padding: 6vw 4% 8vw 4%;
+  }
+
+  .cohen-media-box p:not(:last-child) {
+    margin-bottom: 3vw;
+  }
 }
 
 /* #Team
@@ -1220,6 +1676,38 @@ body {
   margin-bottom: .78vw;
 }
 
+@media (max-width: 1023.98px) {
+  .cohen-team {
+    padding: 18vw 0;
+  }
+  
+  .cohen-team .container {
+    width: 98%;
+  }
+  
+  .cohen-team-title {
+    text-align: center;
+    margin-bottom: 12vw;
+  }
+
+  .cohen-team ul {
+    margin: -6vw 0;
+  }
+  
+  .cohen-team ul li {
+    flex: 0 0 50%;
+    margin-bottom: 0;
+
+    padding: 6vw 0;
+  }
+  
+  .cohen-team .img img {
+    width: 40vw;
+    height: 40vw;
+    margin-bottom: 2vw;
+  }
+}
+
 /* #Logos
 ================================================== */
 .cohen-logos {
@@ -1251,6 +1739,38 @@ body {
   object-fit: contain;
 }
 
+@media (max-width: 1023.98px) {
+  .cohen-logos {
+    padding: 10vw 0;
+  }
+  
+  .cohen-logos .container {
+    width: 92%;
+  }
+  
+  .cohen-logos ul {
+    margin: 0 -1vw;
+    margin-top: 1.8vw;
+
+    flex-wrap: wrap;
+  }
+  
+  .cohen-logos ul li {
+    padding: 4vw 0;
+    flex-grow: 1;
+
+    flex: 0 0 50%;
+  }
+  
+  .cohen-logos img {
+    max-width: 32vw;
+    max-height: 16vw;
+    object-position: center;
+
+    margin: 0 auto;
+  }
+}
+
 /* #Product Header
 ================================================== */
 .cohen-product-header {
@@ -1277,6 +1797,32 @@ body {
   height: 18.22vw;
   object-fit: cover;
   object-position: center;
+}
+
+@media (max-width: 1023.98px) {
+  .cohen-product-header {
+    padding: 10vw 0 20vw 0;
+  }
+  
+  .cohen-product-header .container {
+    width: 100%;
+    display: block;
+  }
+  
+  .cohen-product-header .text {
+    padding: 0 4%;
+    text-align: center;
+    margin-bottom: 8vw;
+  }
+
+  .cohen-product-header .text .text-line::after {
+    right: 50%;
+    transform: translateX(50%);
+  }
+  
+  .cohen-product-header .img img {
+    height: 50vw;
+  }
 }
 
 /* #Product Grid
@@ -1316,6 +1862,40 @@ body {
   padding-left: 2.7vw;
 }
 
+@media (max-width: 1023.98px) {
+  .cohen-product-grid {
+    padding: 0;
+    padding-bottom: 6vw;
+  }
+  
+  .cohen-product-grid .container {
+    width: 100%;
+  }
+
+  .cohen-product-grid ul {
+    display: block;
+  }
+
+  .cohen-product-grid li {
+    flex: 0 0 50%;
+    display: block;
+  }
+
+  /* Img */
+  .cohen-product-grid li .img img {
+    height: 50vw;
+  }
+
+  /* Text */
+  .cohen-product-grid li .text {
+    padding: 8vw 4% 10vw 4%;
+  }
+
+  .cohen-product-grid li .text::after {
+    display: none;
+  }
+}
+
 /* #Product Header 2
 ================================================== */
 .product-header-2 {
@@ -1348,6 +1928,42 @@ body {
   height: 16.9vw;
   object-fit: cover;
   object-position: center;
+}
+
+@media (max-width: 1023.98px) {
+  .product-header-2 {
+    padding: 10vw 0;
+  }
+  
+  .product-header-2 .container {
+    width: 100%;
+  }
+  
+  .product-header-2 .text {
+    margin: 0 auto;
+    width: 92%;
+    margin-bottom: 10vw;
+    text-align: initial;
+  }
+  
+  .product-header-2 h2 {
+    margin-bottom: 4vw;
+  }
+  
+  .product-header-2 .img {
+    display: block;
+  }
+  
+  .product-header-2 .img img {
+    width: 100%;
+    height: 55vw;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .product-header-2 .img img:not(:last-child) {
+    margin-bottom: 2vw;
+  }
 }
 
 /* #Product Header 3
@@ -1402,6 +2018,48 @@ body {
   object-position: center;
 }
 
+@media (max-width: 1023.98px) {
+  .product-header-3 {
+    padding: 10vw 0;
+  }
+  
+  .product-header-3 .container {
+    width: 100%;
+    display: block;
+  }
+  
+  .product-header-3 .text {
+    display: block;
+    margin-bottom: 2vw;
+  }
+
+  .product-header-3 .text > *:not(img) {
+    padding: 0 4%;
+  }
+  
+  .product-header-3 .text h2 {
+    margin-bottom: 4vw;
+  }
+  
+  .product-header-3 .text ul,
+  .product-header-3 .text p {
+    margin-bottom: 6vw;
+  }
+  
+  .product-header-3 .text ul {
+    padding-right: 8vw;
+  }
+  
+  .product-header-3 .text img {
+    height: 55vw;
+    margin-top: 10vw;
+  }
+  
+  .product-header-3 .img img {
+    height: 55vw;
+  }
+}
+
 /* #Delivery
 ================================================== */
 .cohen-delivery {
@@ -1411,7 +2069,17 @@ body {
 
 .cohen-delivery .container {
   width: 55%;
-} 
+}
+
+@media (max-width: 1023.98px) {
+  .cohen-delivery {
+    padding: 10vw 0;
+  }
+  
+  .cohen-delivery .container {
+    width: 92%;
+  }
+}
 
 /* #Safety
 ================================================== */
@@ -1422,7 +2090,7 @@ body {
 
 .cohen-safety .container {
   width: 62%;
-} 
+}
 
 .cohen-safety .text {
   margin: 0 auto;
@@ -1452,6 +2120,44 @@ body {
   object-position: center;
 }
 
+@media (max-width: 1023.98px) {
+  .cohen-safety {
+    padding: 10vw 0;
+  }
+  
+  .cohen-safety .container {
+    width: 92%;
+  }
+  
+  .cohen-safety .text {
+    width: 100%;
+    margin-bottom: 10vw;
+  }
+
+  .cohen-safety .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+  }
+  
+  .cohen-safety .img img:nth-child(1),
+  .cohen-safety .img img:nth-child(3) {
+    width: 27vw;
+    height: 27vw;
+    margin: 0 7vw;
+  }
+  
+  .cohen-safety .img img:nth-child(2) {
+    width: 100%;
+    height: 57vw;
+    order: -1;
+    flex: 0 0 100%;
+    margin-bottom: 8vw;
+  }
+}
+
 /* #Planning Text
 ================================================== */
 .cohen-planning-text {
@@ -1461,6 +2167,16 @@ body {
 
 .cohen-planning-text .container {
   width: 35%;
+}
+
+@media (max-width: 1023.98px) {
+  .cohen-planning-text {
+    padding-top: 10vw;
+  }
+  
+  .cohen-planning-text .container {
+    width: 92%;
+  }
 }
 
 /* #Planning Img
@@ -1480,6 +2196,20 @@ body {
   object-position: center;
 }
 
+@media (max-width: 1023.98px) {
+  .cohen-planning-img {
+    padding-bottom: 0;
+  }
+  
+  .cohen-planning-img .container {
+    width: 100%;
+  }
+  
+  .cohen-planning-img img {
+    height: 70vw;
+  }
+}
+
 /* #QA Text
 ================================================== */
 .cohen-qa-text {
@@ -1489,6 +2219,16 @@ body {
 
 .cohen-qa-text .container {
   width: 55%;
+}
+
+@media (max-width: 1023.98px) {
+  .cohen-qa-text {
+    padding-top: 10vw;
+  }
+  
+  .cohen-qa-text .container {
+    width: 92%;
+  }
 }
 
 /* #QA Img
@@ -1509,6 +2249,24 @@ body {
   height: 41.66vw;
   object-fit: cover;
   object-position: center;
+}
+
+@media (max-width: 1023.98px) {
+  .cohen-qa-img {
+    padding-bottom: 20vw;
+  }
+  
+  .cohen-qa-img .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .cohen-qa-img img {
+    width: 49.25%;
+    height: 70vw;
+  }
 }
 
 /* #Contact
@@ -1576,6 +2334,62 @@ body {
   flex: 0 0 45%;
 }
 
-.cohen-contact-info .col > div:not(:last-child) {
+.cohen-contact-info .col>div:not(:last-child) {
   margin-bottom: 1vw;
+}
+
+@media (max-width: 1023.98px) {
+  .cohen-contact .container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+  
+  /* Text */
+  .cohen-contact .text {
+    flex: 0;
+    padding: 10vw 4%;
+  }
+  
+  /* Img */
+  .cohen-contact .img {
+    flex: 0;
+    width: 100%;
+  }
+  
+  .cohen-contact .img img {
+    height: 70vw;
+  }
+  
+  /* Form */
+  .cohen-contact-form {
+    margin-bottom: 8vw;
+  }
+  
+  .cohen-contact-form .input-group {
+    display: block;
+    margin-bottom: 2vw;
+  }
+  
+  .cohen-contact-form .input-group input {
+    margin-bottom: 4vw;
+  }
+  
+  .cohen-contact-form .btn {
+    margin-top: 7vw;
+    width: 100%;
+  }
+  
+  /* Info */
+  .cohen-contact-info {
+    line-height: 1.6;
+  }
+  
+  .cohen-contact-info .col {
+    flex: 0 0 45%;
+  }
+  
+  .cohen-contact-info .col>div:not(:last-child) {
+    margin-bottom: 4vw;
+  }
 }
