@@ -22,7 +22,7 @@
 /* #Header
 ================================================== */
 .cohen-header-action {
-  left: 9.27vw;
+  left: 6.77vw;
   right: auto;
 }
 
@@ -43,9 +43,8 @@
   }
 
   .cohen-header-action::before {
-    left: 0;
-    right: auto;
-    transform: translateY(-80%) translateX(-5%) rotate(45deg);
+    right: 61%;
+    transform: translateY(-73%) translateX(100%) rotate(45deg);
   }
 }
 

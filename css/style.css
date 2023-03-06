@@ -79,7 +79,8 @@ body {
   border-radius: 500px;
   height: 2.6vw;
   padding: 0 2vw;
-  border: none;
+  border: 1px solid transparent;
+  transition: all .3s ease;
 }
 
 /* Btn Primary */
@@ -87,10 +88,18 @@ body {
   background-color: #fccb06;
 }
 
+.btn-primary:hover {
+  border-color: #3333339f;
+}
+
 /* Btn Secondary */
 .btn-secondary {
   background-color: #333333;
   color: white;
+}
+
+.btn-secondary:hover {
+  background-color: black;
 }
 
 /* Btn Small */
@@ -102,7 +111,6 @@ body {
 }
 
 @media (max-width: 1023.98px) {
-
   /* Btn */
   .btn {
     font-size: 5vw;
@@ -128,10 +136,17 @@ body {
   color: #333;
   height: 2.6vw;
   padding: 0 .78vw;
+  border: 1px solid transparent;
+  transition: all .3s ease;
 }
 
 .input-primary::placeholder {
   color: #333;
+}
+
+.input-primary:hover,
+.input-primary:focus {
+  border-color: #333;
 }
 
 @media (max-width: 1023.98px) {
@@ -199,6 +214,7 @@ body {
 .cohen-header.cohen-header-scrolled {
   color: #333;
   background-color: white;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, .08);
 }
 
 .cohen-header .container {
@@ -229,10 +245,39 @@ body {
 .cohen-header-action {
   display: flex;
   align-items: center;
+  justify-content: center;
   position: absolute;
-  top: .5vw;
-  right: 9.27vw;
+  top: 0;
+  right: 6.77vw;
   color: #333;
+
+  width: 5.72vw;
+  height: 2.44vw;
+  font-weight: 500;
+}
+
+.cohen-header-language {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cohen-header-language a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cohen-header-link.active {
+  color: #fccb06;
+}
+
+.cohen-header-link.active svg {
+  fill: #fccb06;
 }
 
 .cohen-header-link .simbol {
@@ -248,6 +293,10 @@ body {
 
 .cohen-header.cohen-header-scrolled .cohen-header-link svg {
   fill: #333;
+}
+
+.cohen-header.cohen-header-scrolled .cohen-header-link.active svg {
+  fill: #fccb06;
 }
 
 @media (min-width: 1024px) {
@@ -318,8 +367,8 @@ body {
     content: '';
     position: absolute;
     top: 0;
-    right: 0;
-    transform: translateY(-80%) translateX(77%) rotate(45deg);
+    right: 61%;
+    transform: translateY(-73%) translateX(100%) rotate(45deg);
     width: 5vw;
     height: 10vw;
     background-color: white;
@@ -328,16 +377,41 @@ body {
     transition: all .3s ease;
   }
 
+  .cohen-header-action:hover::before {
+    background-color: #fccb06;
+  }
+
   .cohen-header.cohen-header-scrolled .cohen-header-action {
     color: white;
+    transition: all .3s ease;
+  }
+
+  .cohen-header.cohen-header-scrolled .cohen-header-action:hover {
+    color: #333;
   }
 
   .cohen-header.cohen-header-scrolled .cohen-header-action::before {
     background-color: #333;
   }
 
+  .cohen-header.cohen-header-scrolled .cohen-header-action:hover::before {
+    background-color: #fccb06;
+  }
+
   .cohen-header-link-list .collapsible:hover .collapse-toggler .simbol svg {
     transform: rotate(180deg);
+  }
+
+  .cohen-header-link:hover {
+    color: #fccb06;
+  }
+
+  .cohen-header-link:hover svg {
+    fill: #fccb06;
+  }
+
+  .cohen-header.cohen-header-scrolled .cohen-header-link:hover svg {
+    fill: #fccb06;
   }
 }
 
@@ -366,7 +440,15 @@ body {
     position: static;
     order: 2;
     height: 14.66vw;
-    font-weight: 500;
+    width: 100%;
+  }
+
+  .cohen-header-language a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
 
   .cohen-header-hamburger img {
@@ -657,6 +739,8 @@ body {
   .cohen-footer {
     padding: 15vw 0;
     background-size: contain;
+    background-image: none;
+    background-color: white;
   }
 
   .cohen-footer .container {
@@ -764,8 +848,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 40%;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.781), transparent);
+  height: 50%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
   z-index: 1;
 }
 
@@ -775,8 +859,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 70%;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.151), transparent);
+  height: 1000%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent);
   z-index: 1;
 }
 
@@ -879,7 +963,7 @@ body {
   left: 0;
   width: 100%;
   height: 50%;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.781), transparent);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
   z-index: 1;
 }
 
@@ -890,7 +974,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
@@ -1189,9 +1273,14 @@ body {
   display: flex;
 }
 
+.cohen-home-products ul li:hover .img img {
+  transform: scale(1.04);
+}
+
 /* Img */
 .cohen-home-products li .img {
   flex: 0 0 50%;
+  overflow: hidden;
 }
 
 .cohen-home-products li .img img {
@@ -1199,6 +1288,9 @@ body {
   height: 25vw;
   object-fit: cover;
   object-position: center;
+  transition: all .6s ease-out;
+  transform: scale(1.01);
+  backface-visibility: hidden;
 }
 
 /* Text */
@@ -1790,6 +1882,7 @@ body {
 
 .cohen-product-header .img {
   flex: 0 0 50%;
+  overflow: hidden;
 }
 
 .cohen-product-header .img img {
@@ -1797,6 +1890,14 @@ body {
   height: 18.22vw;
   object-fit: cover;
   object-position: center;
+  transform: scale(1.01);
+  backface-visibility: hidden;
+  transition: all .6s ease-out;
+  backface-visibility: hidden;
+}
+
+.cohen-product-header:hover .img img {
+  transform: scale(1.03);
 }
 
 @media (max-width: 1023.98px) {
@@ -1850,12 +1951,23 @@ body {
   padding-bottom: 2vw;
 }
 
+.cohen-product-grid ul li:hover .img img {
+  transform: scale(1.04);
+}
+
+.cohen-product-grid .img {
+  overflow: hidden;
+  margin-bottom: 1.3vw;
+}
+
 .cohen-product-grid .img img {
   width: 100%;
   height: 16.4vw;
   object-fit: cover;
   object-position: center;
-  margin-bottom: 1.3vw;
+  transform: scale(1.01);
+  backface-visibility: hidden;
+  transition: all .8s ease-out;
 }
 
 .cohen-product-grid .text {
