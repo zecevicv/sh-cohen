@@ -1903,7 +1903,7 @@ body {
 
 @media (max-width: 1023.98px) {
   .cohen-product-header {
-    padding: 10vw 0 20vw 0;
+    padding: 10vw 0 0 0;
   }
   
   .cohen-product-header .container {
@@ -1978,7 +1978,6 @@ body {
 @media (max-width: 1023.98px) {
   .cohen-product-grid {
     padding: 0;
-    padding-bottom: 6vw;
   }
   
   .cohen-product-grid .container {
@@ -1991,10 +1990,15 @@ body {
 
   .cohen-product-grid li {
     flex: 0 0 50%;
-    display: block;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   /* Img */
+  .cohen-product-grid .img {
+    margin-bottom: 0;
+  } 
+
   .cohen-product-grid li .img img {
     height: 50vw;
   }
