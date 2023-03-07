@@ -1318,10 +1318,6 @@ body {
   margin-bottom: 2vw;
 }
 
-.cohen-home-products .text-line {
-  width: 70%;
-}
-
 @media (min-width: 1024px) {
 
   .cohen-home-products li:nth-child(3),

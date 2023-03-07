@@ -43,7 +43,7 @@
   }
 
   .cohen-header-action::before {
-    right: 61%;
+    right: 63%;
     transform: translateY(-73%) translateX(100%) rotate(45deg);
   }
 }
@@ -59,7 +59,7 @@
 ================================================== */
 .cohen-footer-top ul li:not(:last-child) {
   margin-right: 3.125vw;
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .cohen-footer .social ul li:not(:last-child) {
@@ -85,6 +85,34 @@
   left: auto;
   right: 23.5%;
   transform: translateY(-70%) translateX(50%) rotate(45deg);
+}
+
+@media (min-width: 1023.98px) {
+  .cohen-banner h1 {
+    font-size: 2.1vw!important;
+  }
+  
+  .cohen-banner h1 br {
+    display: none;
+  }
+  
+  .cohen-banner p {
+    font-size: 1.45vw!important;
+  }
+  
+  .cohen-banner .text {
+    width: 23%;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .cohen-banner .text h1 {
+    font-size: 7vw!important;
+  }
+
+  .cohen-banner .text p {
+    font-size: 4.5vw!important;
+  }
 }
 
 /* #Banner 2
@@ -148,6 +176,16 @@
     left: 0;
     transform: translate(-50%, -50%) rotate(45deg);
   }
+
+  .cohen-home-products li p {
+    margin-bottom: 2vw;
+  
+    display: -webkit-box;
+    margin-bottom: 2vw;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 }
 
 /* #Info Section
@@ -173,6 +211,12 @@
 .cohen-newsletter .input-group input:not(:last-child) {
   margin-left: 0;
   margin-right: .8vw;
+}
+
+@media (max-width: 1023.98px) {
+  .cohen-newsletter .checkbox label {
+    text-align: left;
+  }
 }
 
 /* #Media Boxes
