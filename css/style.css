@@ -2167,9 +2167,14 @@ body {
     height: 55vw;
     margin-top: 10vw;
   }
+
+  .product-header-3 .img {
+    display: flex;
+  }
   
   .product-header-3 .img img {
     height: 55vw;
+    margin-top: auto;
   }
 }
 
