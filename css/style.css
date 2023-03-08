@@ -2499,7 +2499,6 @@ body {
 
 .cohen-contact .container {
   display: flex;
-  align-items: center;
 }
 
 /* Text */
@@ -2507,6 +2506,8 @@ body {
   flex: 0 0 50%;
   padding-right: 18.8vw;
   padding-left: 2.6vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
 }
 
 /* Img */
@@ -2515,7 +2516,7 @@ body {
 }
 
 .cohen-contact .img img {
-  height: 36.5vw;
+  height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: center;
@@ -2556,6 +2557,34 @@ body {
 
 .cohen-contact-info .col>div:not(:last-child) {
   margin-bottom: 1vw;
+}
+
+@media (max-width: 1680px) {
+  /* Embeded Form */
+  .cohen-contact .embeded-form iframe {
+    height: 444px!important;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  /* Embeded Form */
+  .cohen-contact .embeded-form iframe {
+    height: 285px!important;
+  }
+}
+
+@media (max-width: 525px) {
+  /* Embeded Form */
+  .cohen-contact .embeded-form iframe {
+    height: 444px!important;
+  }
+}
+
+@media (max-width: 320px) {
+  /* Embeded Form */
+  .cohen-contact .embeded-form iframe {
+    height: 465px!important;
+  }
 }
 
 @media (max-width: 1023.98px) {
