@@ -739,6 +739,13 @@ body {
   margin-right: auto;
 }
 
+.cohen-footer-copy {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 2vw;
+}
+
 @media (max-width: 1023.98px) {
   .cohen-footer {
     padding: 15vw 0;
@@ -752,7 +759,7 @@ body {
     display: flex;
     flex-direction: column-reverse;
     position: relative;
-    padding-bottom: 20vw;
+    padding-bottom: 40vw;
   }
 
   /* Top */
@@ -780,7 +787,7 @@ body {
 
   .cohen-footer .social {
     position: absolute;
-    bottom: 0;
+    bottom: 20vw;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -814,6 +821,17 @@ body {
     margin-right: 0;
     margin-bottom: 11vw;
   }
+
+  .cohen-footer-copy {
+    order: -10;
+    justify-content: center;
+    margin-top: 2vw;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }  
 }
 
 /* #Banner

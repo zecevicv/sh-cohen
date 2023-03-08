@@ -85,6 +85,10 @@
     width: 16vw;
     margin-bottom: .4vw;
   }
+
+  .cohen-footer-copy {
+    justify-content: flex-start;
+  }
 }
 
 @media (max-width: 1023.98px) {
