@@ -1571,6 +1571,10 @@ body {
   margin-left: .8vw;
 }
 
+.cohen-newsletter .embeded-form {
+  margin-top: 2vw;
+}
+
 @media (max-width: 1023.98px) {
   .cohen-newsletter {
     padding: 10vw 0;
@@ -1608,6 +1612,10 @@ body {
   .cohen-newsletter .input-group input:not(:last-child) {
     margin-left: 0;
     margin-bottom: 4vw;
+  }
+
+  .cohen-newsletter .embeded-form iframe {
+    height: 342px!important;
   }
 }
 
