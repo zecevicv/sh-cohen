@@ -2052,6 +2052,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .product-header-2 .img img {
@@ -2059,6 +2060,17 @@ body {
   height: 16.9vw;
   object-fit: cover;
   object-position: center;
+  backface-visibility: hidden;
+  transition: all .8s ease-out;
+  transform: scale(1.01);
+}
+
+.product-header-2 .img img:hover {
+  transform: scale(1.04);
+}
+
+.product-header-2 .img-wrap {
+  overflow: hidden;
 }
 
 @media (max-width: 1023.98px) {
@@ -2092,7 +2104,7 @@ body {
     object-position: center;
   }
 
-  .product-header-2 .img img:not(:last-child) {
+  .product-header-2 .img-wrap:not(:last-child) {
     margin-bottom: 2vw;
   }
 }
@@ -2136,10 +2148,18 @@ body {
   object-fit: cover;
   object-position: center;
   margin-top: auto;
+  transition: all .8s ease-out;
+  transform: scale(1.01);
+}
+
+.product-header-3 .img-wrap {
+  margin-top: auto;
+  overflow: hidden;
 }
 
 .product-header-3 .img {
   flex: 0 0 54%;
+  overflow: hidden;
 }
 
 .product-header-3 .img img {
@@ -2147,6 +2167,13 @@ body {
   height: 40.36vw;
   object-fit: cover;
   object-position: center;
+  transition: all .8s ease-out;
+  transform: scale(1.01);
+}
+
+.product-header-3 .img:hover img,
+.product-header-3 .img-wrap:hover img {
+  transform: scale(1.04);
 }
 
 @media (max-width: 1023.98px) {
@@ -2164,7 +2191,7 @@ body {
     margin-bottom: 2vw;
   }
 
-  .product-header-3 .text > *:not(img) {
+  .product-header-3 .text > *:not(.img-wrap) {
     padding: 0 4%;
   }
   
