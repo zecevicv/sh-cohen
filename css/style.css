@@ -2391,6 +2391,37 @@ body {
   }
 }
 
+/* #Delivery Img
+================================================== */
+.cohen-delivery-img {
+  padding-bottom: 5.2vw;
+}
+
+.cohen-delivery-img .container {
+  width: 62%;
+}
+
+.cohen-delivery-img img {
+  width: 100%;
+  height: 34.375vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 1023.98px) {
+  .cohen-delivery-img {
+    padding-bottom: 0;
+  }
+  
+  .cohen-delivery-img .container {
+    width: 100%;
+  }
+  
+  .cohen-delivery-img img {
+    height: 70vw;
+  }
+}
+
 /* #QA Text
 ================================================== */
 .cohen-qa-text {
