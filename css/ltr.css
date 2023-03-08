@@ -46,12 +46,20 @@
     right: 63%;
     transform: translateY(-73%) translateX(100%) rotate(45deg);
   }
+
+  .cohen-header-logo img {
+    width: 16.88vw;
+  }
 }
 
 @media (max-width: 1023.98px) {
   .cohen-header-links .collapse-toggler .simbol {
     margin-right: 0;
     margin-left: auto;
+  }
+
+  .cohen-header-logo img {
+    width: 51.88vw;
   }
 }
 
@@ -83,7 +91,7 @@
 ================================================== */
 .cohen-banner::after {
   left: auto;
-  right: 23.5%;
+  right: 25.5%;
   transform: translateY(-70%) translateX(50%) rotate(45deg);
 }
 

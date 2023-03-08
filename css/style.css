@@ -228,6 +228,8 @@ body {
 
 .cohen-header-logo img {
   width: 10.88vw;
+  height: 3.125vw;
+  object-fit: contain;
 }
 
 .cohen-header-menu {
@@ -434,6 +436,7 @@ body {
 
   .cohen-header-logo img {
     width: 30vw;
+    height: 8.8vw;
   }
 
   .cohen-header-action {
