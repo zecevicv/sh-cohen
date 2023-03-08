@@ -142,7 +142,7 @@
 ================================================== */
 .cohen-banner-2::after {
   left: auto;
-  right: 23.5%;
+  right: 25.5%;
   transform: translateY(-70%) translateX(50%) rotate(45deg);
 }
 
