@@ -80,7 +80,18 @@
   margin-left: auto;
 }
 
+@media (min-width: 1023.98px) {
+  .cohen-footer .logo img {
+    width: 16vw;
+    margin-bottom: .4vw;
+  }
+}
+
 @media (max-width: 1023.98px) {
+  .cohen-footer .logo img {
+    width: 60vw;
+  }
+
   .cohen-footer .social ul li:not(:last-child) {
     margin-left: 0;
     margin-right: 5vw;
