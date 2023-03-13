@@ -1619,6 +1619,18 @@ body {
   }
 }
 
+@media (max-width: 523px) {
+  .cohen-newsletter .embeded-form iframe {
+    height: 405px!important;
+  }
+}
+
+@media (max-width: 360px) {
+  .cohen-newsletter .embeded-form iframe {
+    height: 420px!important;
+  }
+}
+
 /* #About Section
 ================================================== */
 .cohen-about-section {
@@ -2562,28 +2574,35 @@ body {
 @media (max-width: 1680px) {
   /* Embeded Form */
   .cohen-contact .embeded-form iframe {
-    height: 444px!important;
+    height: 520px!important;
+  }
+}
+
+@media (max-width: 1100px) {
+  /* Embeded Form */
+  .cohen-contact .embeded-form iframe {
+    height: 540px!important;
   }
 }
 
 @media (max-width: 1023.98px) {
   /* Embeded Form */
   .cohen-contact .embeded-form iframe {
-    height: 285px!important;
+    height: 335px!important;
   }
 }
 
 @media (max-width: 525px) {
   /* Embeded Form */
   .cohen-contact .embeded-form iframe {
-    height: 444px!important;
+    height: 530px!important;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 365px) {
   /* Embeded Form */
   .cohen-contact .embeded-form iframe {
-    height: 465px!important;
+    height: 540px!important;
   }
 }
 
