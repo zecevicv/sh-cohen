@@ -207,7 +207,7 @@ body {
   width: 100%;
   z-index: 10000;
   color: white;
-  transition: all .4s ease;
+  transition: background-color .4s ease, box-shadow .4s ease;
   padding: 1.8vw 0;
 }
 
@@ -274,6 +274,10 @@ body {
   justify-content: center;
 }
 
+.cohen-header-link {
+  transition: color .3s ease;
+}
+
 .cohen-header-link.active {
   color: #fccb06;
 }
@@ -290,7 +294,7 @@ body {
   width: .78vw;
   margin-right: .5vw;
   fill: white;
-  transition: all .3s ease;
+  transition: fill .3s ease, transform .3s ease;
 }
 
 .cohen-header.cohen-header-scrolled .cohen-header-link svg {
@@ -1615,7 +1619,7 @@ body {
   }
 
   .cohen-newsletter .embeded-form iframe {
-    height: 342px!important;
+    height: 372px!important;
   }
 }
 

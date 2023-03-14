@@ -146,6 +146,12 @@
   transform: translateY(-70%) translateX(50%) rotate(45deg);
 }
 
+@media (min-width: 1024px) {
+  .cohen-banner-2 .text {
+    width: 37%;
+  }
+}
+
 /* #Breadcrumbs
 ================================================== */
 .cohen-breadcrumbs ul li {
