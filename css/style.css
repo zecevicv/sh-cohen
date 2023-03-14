@@ -2161,6 +2161,7 @@ body {
   width: 62%;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .product-header-3 .text {
